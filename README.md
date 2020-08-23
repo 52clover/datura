@@ -6,7 +6,7 @@ git clone https://github.com/52clover/clover.git
 # 目录 datura->clover
 
 # 修改mysql的配置host  clover->config.py
-MYSQL = {"host": "mysql"}
+MYSQL = {"host": "mysql", 'user': 'root', 'pswd': '52.clover'}
 
 # 修改redis的配置host  clover->config.py
 REDIS_HOST = {"host": "redis"}

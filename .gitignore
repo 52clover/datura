@@ -1,6 +1,5 @@
 *.DS_Store
 .idea/
 .vscode
-clover
-poppy
 datura.tar
+docker部署/datura20.tar

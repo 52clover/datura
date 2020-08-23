@@ -7,7 +7,7 @@ services:
       - "6379:6379"
   mysql:
     image: "mysql:5.7"
-    build: ./mysql
+    # build: ./mysql
     environment:
       - MYSQL_DATABASE=clover
       - MYSQL_ROOT_PASSWORD=52.clover
@@ -16,7 +16,7 @@ services:
     command: --character-set-server=utf8 --collation-server=utf8_general_ci
   clover:
     image: "clover:2.0"
-    build: ./clover
+    # build: ./clover
     ports:
      - "5000:5000"
     links:
@@ -27,12 +27,11 @@ services:
      - redis
   poppy:
     image: "poppy:2.0"
-    build: ./poppy
+    # build: ./poppy
     ports:
      - "8080:80"
     depends_on:
       - clover
-
 
 ###############################
 # docker-compose build
