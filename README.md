@@ -9,4 +9,11 @@
 # 4. 启动docker容器: docker-compose up -d  (TIP: docker-compose命令和docker-compose.yml文件相同目录)
 ##############################################################################
 # 5. 进入clover容器手动启动gunicorn服务: gunicorn -c gconfig.py clover:app
+
+# 6. 127.0.0.1:8080即可访问服务
+# 7. 修改8080端口的方式:
+#   7.1 编辑docker-compose.yml文件
+#   7.2 poppy
+#         ports:
+#           - "xxxx:80"
 ```
